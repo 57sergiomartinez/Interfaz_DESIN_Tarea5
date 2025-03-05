@@ -44,19 +44,16 @@ public class MainInterface {
             // Panel de botones
             JPanel buttonPanel = new JPanel();
             JButton button = new JButton("Escoger");
-            button.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    StringBuilder seleccionadas = new StringBuilder("Has escogido: ");
-                    if (cbPMDM.isSelected()) seleccionadas.append("PMDM ");
-                    if (cbPSPR.isSelected()) seleccionadas.append("PSPR ");
-                    if (cbDESIN.isSelected()) seleccionadas.append("DESIN ");
-                    if (cbADT.isSelected()) seleccionadas.append("ADT ");
-                    if (cbEIE.isSelected()) seleccionadas.append("EIE ");
-                    if (cbSGEM.isSelected()) seleccionadas.append("SGEM ");
+            button.addActionListener(e -> {
+                StringBuilder seleccionadas = new StringBuilder("Has escogido: ");
+                if (cbPMDM.isSelected()) seleccionadas.append("PMDM ");
+                if (cbPSPR.isSelected()) seleccionadas.append("PSPR ");
+                if (cbDESIN.isSelected()) seleccionadas.append("DESIN ");
+                if (cbADT.isSelected()) seleccionadas.append("ADT ");
+                if (cbEIE.isSelected()) seleccionadas.append("EIE ");
+                if (cbSGEM.isSelected()) seleccionadas.append("SGEM ");
 
-                    JOptionPane.showMessageDialog(frame, seleccionadas.toString());
-                }
+                JOptionPane.showMessageDialog(frame, seleccionadas.toString());
             });
             buttonPanel.add(button);
 
