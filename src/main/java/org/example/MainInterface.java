@@ -16,7 +16,7 @@ public class MainInterface {
             mainPanel.setLayout(new BorderLayout());
             mainPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
-            // Título H1
+            // Título H1 .
             JLabel titleLabel = new JLabel("Asignaturas Favoritas", SwingConstants.CENTER);
             titleLabel.setFont(new Font("Arial", Font.BOLD, 20));
             mainPanel.add(titleLabel, BorderLayout.NORTH);
