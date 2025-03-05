@@ -18,7 +18,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.miempresa.MainInterface</mainClass>
+                            <mainClass>org.example.MainInterface</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -35,7 +35,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.miempresa.MainInterface</mainClass>
+                            <mainClass>org.example.MainInterface</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
